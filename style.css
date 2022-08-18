@@ -1,0 +1,242 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables */
+ :root{
+    --navbar-height:59px
+ }
+ /* navigation bar */
+ #navbar{
+    position:absolute;
+    display: flex;
+    align-items: center;
+ }
+#navbar::before{
+    content: "";
+   
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+}
+ /* navigation bar:logo and images */
+ #logo{
+margin: 50px 50px;
+ }
+ #logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 40px 20px;
+
+ }
+ #navbar ul{
+    display: flex;
+ }
+ #navbar ul li{
+    /* color: white; */
+list-style: none; 
+font-size: 2rem;
+}
+#navbar ul li a{
+    color:yellow;
+    display: block;
+    padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color:black
+   
+    
+}
+.search{
+    border-radius: 10px;
+   
+
+    
+}
+.search input{
+    outline: none;
+    border: none;
+    width: 50%;
+    padding-left: 10%;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px ;
+    height: 720px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    position: absolute;
+    background: url(f3.jpg) ;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .69;
+}
+
+
+#home h1{
+    color: rgb(18, 53, 3);
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:5.8rem ;
+}
+#home h2{
+    font-size: 4rem;
+}
+#home h3{
+    font-size: 3.5rem;
+}
+#home h4{
+    font-size: 3.5rem;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid green;
+    background-color: rgb(174, 34, 34);
+    color: white;
+    margin: 17px;
+    font-size:1.5rem ;
+    border-radius: 10px;
+    cursor: pointer;    
+}
+
+.center{
+    text-align: center;
+}
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border:2px solid black;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: white;
+    
+
+    
+
+}
+#services .box img{
+    height:350px;
+    width: 400px;
+    margin: auto;
+    display: block;
+
+}
+#services .box p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* client section */
+#client-section{
+    height: 344px;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#clients img{
+    height: 250px;
+}
+.client-item{
+   padding:34px ; 
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(back.jpg);
+    height:50%;
+    width:100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+/* contact section */
+#contact{
+    position: relative
+    ;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(mobile.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .2;
+
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius:9px ;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contac-box label {
+    font-size: 1.3rem;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    font-size: 1rem;
+
+}
+/* utility classes */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 10px;
+
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.h-primary center{
+    font-size: 1.5rem;
+}
